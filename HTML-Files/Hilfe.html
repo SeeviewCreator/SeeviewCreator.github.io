@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>never4get</title>
+  <link rel="stylesheet" href="../CSS-File/Style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://materialdesignicons.com/icon/cursor-pointer" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="header">
+    <h1 class="title"><input type="button" id="menu_btn_open" value="< Menu" onclick="Open_Sidebar()">never4get
+      <!--<img src="../imgs/don't4get_blau.png" id="img_title">-->
+    </h1>
+  </div>
+
+  <nav id="Sidebar_nav">
+    <input type="button" id="menu_btn_close" value="🗙" onclick="Close_Sidebar()">
+    <ul class="Seitenmenü_ul_haupt">
+      <li class=".Seitenmenü_li_haupt">
+        <div class="Seitenmenü_li_Homework"><a href="../HTML-Files/Index.html"
+            class="Seitenmenü_li_haupt_a">Homework</a></div>
+      </li>
+      <li class=".Seitenmenü_li_haupt">
+        <div class="Seitenmenü_li_Exames"><a href="../HTML-Files/Seite_Prüfung.html"
+            class="Seitenmenü_li_haupt_a">Exams</a></div>
+      </li>
+      <li class="Seitenmenü_li_haupt">
+        <div class="Seitenmenü_li_Hilfe"><a href="../HTML-Files/Hilfe.html" class="Seitenmenü_li_haupt_a">Hilfe</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <br>
+  <div class="div_hauptoberfläche">
+    <h2 class="Listen_überschrift">Hilfe</h2>
+    <br>
+    <h3>1. Menü öffnen</h3>
+    <img src="../imgs/Bild_Menü.png" alt="Menü">
+    <br>
+    <p>Drücken Sie auf die Oberfläche "Menü" um das Seitenmenü zu öffnen.</p>
+    <br>
+    <h3>2. Menüoptionen auswählen</h3>
+    <img src="../imgs/Bild_Menüoptionen.png" alt="Menüoptionen">
+    <br>
+    <p>Drücken Sie auf die jeweiligen Menüoptionen, um zu den gewünschten Seiten zu gelangen.</p>
+    <br>
+    <h3>3. Aufgaben hinzufügen</h3>
+    <img src="../imgs/Bild_Aufgabe_Hinzufügen.png" alt="Aufgabe hinzufügen">
+    <br>
+    <p>Drücken Sie auf das "+" unten rechts und wählen Sie die gewünschten Informationen aus. Klicken Sie anschliessend auf die Schaltfläsche
+    "Hinzufügen", um eine neue Aufgabe zu erstellen.
+    </p>
+    <br>
+    <h3>4. Aufgabe abhaken</h3>
+    <img src="../imgs/Bild_Aufgabe_Abhacken.png" alt="Aufgabe abhaken">
+    <br>
+    <p>Wenn die Aufgabe erledigt wurde, kann sie durch einfaches Klicken auf die Aufgabe abgehakt werden. </p>
+    <br>
+    <h3>5. Aufgabe löschen</h3>
+    <img src="../imgs/Bild_Aufgabe_Löschen.png" alt="Aufgabe löschen">
+    <br>
+    <p>Um eine Aufgabe zu löschen, klicken Sie auf das rote Kreuz.</p>
+  </div >
+  
+</body>
+
+</html>
+<script>
+  function Open_Sidebar() {
+    document.getElementById('Sidebar_nav').style.left = '0';
+  }
+
+  function Close_Sidebar() {
+    document.getElementById('Sidebar_nav').style.left = '-160px';
+  }
+</script>

@@ -1,0 +1,399 @@
+html {
+    font-family: Comic sans MS;
+}
+
+
+body {
+    background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/3060.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#img_title {
+    width: 50px;
+}
+
+@media screen and (max-width: 414px) {
+    body {
+        background-image: url(https://i.pinimg.com/236x/57/f5/05/57f5059148f0e4b4adee4d4a0d7ae204--mobile-backgrounds-backgrounds-wallpapers.jpg);
+        background-size: 120%;
+    }
+}
+
+
+#header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.div_hauptoberfläche {
+    /*border: 1px solid black;*/
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#tests {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.title {
+    text-align: center;
+    font-size: xx-large;
+}
+
+#erledigt {
+    border: 1px solid black;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#menu_btn_open {
+    border: none;
+    background-color: transparent;
+    float: left;
+    font-family: Comic sans MS;
+    font-size: large;
+}
+
+#menu_btn_close {
+    border: none;
+    background-color: transparent;
+    float: right;
+    color: white;
+
+}
+
+#btn_submit {
+    color: black;
+    background-color: white;
+}
+
+.Listen_überschrift {
+    margin-left: 2%;
+    text-decoration: underline;
+}
+
+.Listen_untertitel {
+    margin-left: 2%;
+}
+
+
+#oberflaeche {
+    background-color: white;
+}
+
+#Plus_button {
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: xx-large;
+    margin-right: 1%;
+    right: 5px;
+    float: right;
+}
+
+#Bottommenu_nav {
+    position: fixed;
+    color: white;
+    height: 286px;
+    bottom: -247px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: block;
+}
+
+#bottommenu_div {
+    margin-left: 5%;
+}
+
+#Sidebar_nav {
+    position: fixed;
+    width: 160px;
+    left: -160px;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 5;
+}
+
+.Seitenmenü_ul_haupt {
+    list-style-type: none;
+}
+
+.Seitenmenü_li_haupt {
+    list-style-type: none;
+    color: white;
+}
+
+.Seitenmenü_li_haupt_a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.Seitenmenü_li_Homework {
+    height: 60px;
+    margin-top: 50px;
+}
+
+.Seitenmenü_li_Exames {
+    height: 60px;
+}
+
+.Seitenmenü_li_Hilfe {
+    bottom: 50px;
+    position: absolute;
+}
+
+.neuStyle {
+    background-color: gray;
+    color: white;
+    width: 155px;
+    float: right;
+    margin-right: 2%;
+    font-family: Comic sans MS;
+}
+
+.Beschreibung_Input {
+    float: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#Liste_todo {
+    margin: 0;
+    padding: 0;
+}
+
+.Liste_todo_Berufsschule .Listenelement_todo {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style-type: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.Liste_todo_Berufsschule .Listenelement_todo:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.Liste_todo_Berufsschule .Listenelement_todo:hover {
+    background: #ddd;
+}
+
+.Liste_todo_Berufsschule .Listenelement_todo.checked {
+    background: #888;
+    color: rgb(0, 0, 0);
+    text-decoration: line-through;
+}
+
+.Liste_todo_Berufsschule .Listenelement_todo.checked::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.Liste_todo_Berufsmatura .Listenelement_todo {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style-type: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.Liste_todo_Berufsmatura .Listenelement_todo:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.Liste_todo_Berufsmatura .Listenelement_todo:hover {
+    background: #ddd;
+}
+
+.Liste_todo_Berufsmatura .Listenelement_todo.checked {
+    background: #888;
+    color: rgb(0, 0, 0);
+    text-decoration: line-through;
+}
+
+.Liste_todo_Berufsmatura .Listenelement_todo.checked::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+/*.Sidebar_nav::after{
+    left: 100%;
+    top: 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, .9);
+    border-bottom-right-radius: 5px;
+    content: "+";
+    font-weight: 400;
+    position: absolute;
+    color: white;
+}
+/*.Sidebar_nav {
+    position: fixed;
+    width: 160px;
+    left: -160px;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 15px 0;
+    transition: left 1s ease-in 0.5s;
+    z-index: 2;
+}
+
+.Sidebar_Text {
+    color: white;
+    list-style-type: none;
+}
+
+.Sidebar_nav::after {
+    content: "\f0c9";
+    font-family: "FontAwesome";
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: inherit;
+    color: #ffffff;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, .9);
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+*/
+.Sidebar_nav:hover {
+    left: 0;
+    transition: left 1s ease-in 0s;
+
+}
+
+/*
+.Sidebar_nav:hover:after {
+    content: "\f00d";
+}
+
+.Sidebar_nav>.Seitenmenü_ul_haupt {
+    margin-top: 32px;
+}
+
+.Sidebar_nav .Seitenmenü_ul_haupt .Seitenmenü_li_haupt>.Seitenmenü_ul_untermenü {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .9);
+    width: 100%;
+    top: 1999px;
+    left: 100%;
+    transition: top .5s;
+}
+
+.Sidebar_nav .Seitenmenü_ul_haupt .Seitenmenü_li_haupt>.Seitenmenü_ul_untermenü .Seitenmenü_li_untermenü {
+    min-width: 120px;
+
+}
+
+
+.Sidebar_nav .Seitenmenü_ul_haupt .Seitenmenü_li_haupt:hover>.Seitenmenü_ul_untermenü,
+.Sidebar_nav .Seitenmenü_ul_haupt .Seitenmenü_li_haupt>ul:hover {
+    top: 0%;
+}
+
+.Sidebar_nav .Seitenmenü_ul_haupt {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 2%;
+    margin: 0;
+}
+
+.Sidebar_nav .Seitenmenü_ul_haupt .Seitenmenü_li_haupt {
+    position: relative;
+    padding-left: 4%;
+
+}
+
+.Sidebar_nav .Seitenmenü_ul_haupt .Seitenmenü_li_haupt:hover {
+    background-color: rgb(0, 149, 255);
+}
+
+.Sidebar_nav .Seitenmenü_ul_haupt .Seitenmenü_li_haupt div {
+    height: 60px;
+    font-size: larger;
+
+}
+
+.Sidebar_nav .Seitenmenü_ul_haupt .Seitenmenü_li_haupt div:after {
+    font-family: "FontAwesome";
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 13px;
+    font-size: 12px;
+}
+
+.Seitenmenü_li_untermenü{
+    list-style-type: none;
+}
+
+.Seitenmenü_ul_haupt .Seitenmenü_li_haupt .Seitenmenü_ul_untermenü .Seitenmenü_li_untermenü {
+    list-style-type: none;
+    margin-left: 0%;
+    padding: 0;
+}
+*/

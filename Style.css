@@ -3,7 +3,7 @@ html {
 }
 
 
-body {
+body { 
     background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/3060.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -248,6 +248,99 @@ body {
 }
 
 .Liste_todo_Berufsmatura .Listenelement_todo.checked::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+
+#Liste_exam {
+    margin: 0;
+    padding: 0;
+}
+
+
+.Liste_exam_Berufsschule .Listenelement_exam {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style-type: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.Liste_exam_Berufsschule .Listenelement_exam:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.Liste_exam_Berufsschule .Listenelement_exam:hover {
+    background: #ddd;
+}
+
+.Liste_exam_Berufsschule .Listenelement_exam.checked {
+    background: #888;
+    color: rgb(0, 0, 0);
+    text-decoration: line-through;
+}
+
+.Liste_exam_Berufsschule .Listenelement_exam.checked::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.Liste_exam_Berufsmatura .Listenelement_exam {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style-type: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.Liste_exam_Berufsmatura .Listenelement_exam:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.Liste_exam_Berufsmatura .Listenelement_exam:hover {
+    background: #ddd;
+}
+
+.Liste_exam_Berufsmatura .Listenelement_exam.checked {
+    background: #888;
+    color: rgb(0, 0, 0);
+    text-decoration: line-through;
+}
+
+.Liste_exam_Berufsmatura .Listenelement_exam.checked::before {
     content: '';
     position: absolute;
     border-color: rgb(0, 0, 0);

@@ -1,25 +1,68 @@
 html {
-    font-family: Comic sans MS;
+    /*font-family: Comic sans MS;*/
+    font-family: 'Roboto Mono', monospace;
 }
 
 
-body { 
+
+/*body { 
     background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/3060.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-}
+}*/
 
 #img_title {
-    width: 50px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+#div_title{
+    text-align: center;
+    z-index: -2;
+}
+@media screen and (max-width: 414px) {
+    #img_title{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        float: right;
+        margin-top: -50px;
+    } 
+    /*.div_hauptoberfläche{
+        margin-top: 60px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: -5%;
+    }
+
+    #menu_btn_open{
+        border: none;
+        background-color: transparent;
+        float: left;
+        font-family: 'Roboto Mono', monospace;
+        font-size: large;
+        margin-left: 5%;
+    }*/
 }
 
-@media screen and (max-width: 414px) {
-    body {
-        background-image: url(https://i.pinimg.com/236x/57/f5/05/57f5059148f0e4b4adee4d4a0d7ae204--mobile-backgrounds-backgrounds-wallpapers.jpg);
-        background-size: 120%;
-    }
+#background-img {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url('https://wallpaperstock.net/wallpapers/thumbs1/3060.jpg') 50% 50% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
+
 
 
 #header {
@@ -32,6 +75,7 @@ body {
     /*border: 1px solid black;*/
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: -5%;
 }
 
 #tests {
@@ -41,7 +85,11 @@ body {
 
 .title {
     text-align: center;
-    font-size: xx-large;
+    font-size: 100px;
+
+}
+.title_hoch_tief{
+    font-size: 50px;
 }
 
 #erledigt {
@@ -54,8 +102,11 @@ body {
     border: none;
     background-color: transparent;
     float: left;
-    font-family: Comic sans MS;
+    font-family: 'Roboto Mono', monospace;
     font-size: large;
+    margin-left: 5%;
+    margin-top: -11%;
+
 }
 
 #menu_btn_close {
@@ -63,7 +114,8 @@ body {
     background-color: transparent;
     float: right;
     color: white;
-
+    margin-top: 7px;
+    margin-right: 7px;
 }
 
 #btn_submit {
@@ -154,13 +206,19 @@ body {
     position: absolute;
 }
 
+.Seitenmenü_li_Version {
+    bottom: 15px;
+    position: absolute;
+    font-size: small;
+}
+
 .neuStyle {
     background-color: gray;
     color: white;
     width: 155px;
     float: right;
     margin-right: 2%;
-    font-family: Comic sans MS;
+    font-family: 'Roboto Mono', monospace
 }
 
 .Beschreibung_Input {

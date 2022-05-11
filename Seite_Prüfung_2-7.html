@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="de">
  
-<head>
+<head> 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>never4get</title>
-  <link rel="stylesheet" href="Style_2-4.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://materialdesignicons.com/icon/cursor-pointer" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>don't4get</title>
+  <link rel="stylesheet" href="Style_2-7.css">
 </head>
 
 <body>
-  <div id="header">
-    <h1 class="title"><input type="button" id="menu_btn_open" value="< Menu" onclick="Open_Sidebar()">never4get</h1>
-  </div>
+  <img src="/imgs_2-7/don't4get_grau.png" id="img_title">
+  <h1 class="title"><input type="button" id="menu_btn_open" value="< Menu" onclick="Open_Sidebar()"></h1>
   
   <nav id="Sidebar_nav">
-    <input type="button" id="menu_btn_close" value="🗙" onclick="Close_Sidebar()">
+    <input type="button" id="menu_btn_close" value="X" onclick="Close_Sidebar()">
     <ul class="Seitenmenü_ul_haupt">
-      <li class=".Seitenmenü_li_haupt"><div class="Seitenmenü_li_Homework"><a href="Index_2-4.html" class="Seitenmenü_li_haupt_a">Homework</a></div></li>
-      <li class=".Seitenmenü_li_haupt"><div class="Seitenmenü_li_Exames"><a href="Seite_Prüfung_2-4.html" class="Seitenmenü_li_haupt_a">Exams</a></div></li>
-      <li class="Seitenmenü_li_haupt"><div  class="Seitenmenü_li_Hilfe"><a href="Hilfe_2-4.html" class="Seitenmenü_li_haupt_a">Hilfe</a></div></li>
+      <li class=".Seitenmenü_li_haupt"><div class="Seitenmenü_li_Homework"><a href="Index_2-7.html" class="Seitenmenü_li_haupt_a">Homework</a></div></li>
+      <li class=".Seitenmenü_li_haupt"><div class="Seitenmenü_li_Exames"><a href="Seite_Prüfung_2-7.html" class="Seitenmenü_li_haupt_a">Exams</a></div></li>
+      <li class="Seitenmenü_li_haupt"><div  class="Seitenmenü_li_Hilfe"><a href="Hilfe_2-7.html" class="Seitenmenü_li_haupt_a">Hilfe</a></div></li>
+      <li class="Seitenmenü_li_haupt"><div class="Seitenmenü_li_Version">Version 2.7</div></li>
     </ul>
   </nav>
   <br>
@@ -40,13 +37,13 @@
   <nav id="Bottommenu_nav">
     <div id="Bottommenu_div">
       <input type="button" id="Plus_button" value="+" onclick="Open_Close_Bottommenu()"><br><br><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Schule:
+      &nbsp;&nbsp;&nbsp;Schule:
       <select name="schule" id="inputSchule" class="neuStyle">
         <option value="Berufschule">Berufschule</option>
         <option value="BM">Berufmatura</option>
       </select>
       <br><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fach:
+      &nbsp;&nbsp;&nbsp;Fach:
       <select name="Fach" class="neuStyle" id="inputFach">
         <option value="Deutsch">D</option>
         <option value="Geschichte und Politik">GuP</option>
@@ -57,17 +54,18 @@
       </select>
       <br>
       <br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Datum:
+      &nbsp;&nbsp;&nbsp;Datum:
       <input type="date" class="neuStyle" id="inputDate">
       <br>
       <br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bemerkungen:
+      &nbsp;&nbsp;&nbsp;Bemerkungen:
       <textarea name="Bemerkungen" class="neuStyle" cols="18" rows="1" id="inputText"></textarea>
       <br>
       <br>
      <center><input type="button" value="Hinzufügen" name="Hinzufügen" id="btn_submit" onclick="createNewexam()"></center>
     </div>
   </nav>
+  <div id="background-img"></div>
 </body>
 
 </html>
@@ -162,6 +160,9 @@
     document.getElementById("inputDate").value = "";
     document.getElementById("inputFach").value = "";
     document.getElementById("inputText").value = "";
+
+    document.getElementById("Bottommenu_nav").style.zIndex = '3';
+    document.getElementById("Bottommenu_nav").style.bottom = '-247px';
 
   }
 
